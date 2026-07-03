@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Environment
+.env
+.env.local
+
+# OS/editor
+.DS_Store
+
+# Source material (large binary, not needed for build)
+EBOOK IA.pdf
