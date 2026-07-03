@@ -1,33 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Tool } from "../lib/tools";
+import {
+	filterTools,
+	formatCostType,
+	getUniqueValues,
+} from "../lib/tool-filters";
 
 interface ToolGalleryProps {
 	tools: Tool[];
-}
-
-function getUniqueValues(tools: Tool[], key: "lessonPhase" | "outputFormat") {
-	return [...new Set(tools.flatMap((tool) => tool.tags[key]))].sort((left, right) =>
-		left.localeCompare(right, "pt-BR"),
-	);
-}
-
-function matchesCost(tool: Tool, costType: string) {
-	return costType === "all" || tool.tags.costType === costType;
-}
-
-function formatCostType(costType: Tool["tags"]["costType"]) {
-	switch (costType) {
-		case "Free":
-			return "Gratuita";
-		case "Freemium":
-			return "Freemium";
-		case "Trial":
-			return "Teste grátis";
-		case "Paid":
-			return "Paga";
-		default:
-			return costType;
-	}
 }
 
 export default function ToolGallery({ tools }: ToolGalleryProps) {
@@ -42,22 +22,10 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 	const lessonPhases = useMemo(() => getUniqueValues(tools, "lessonPhase"), [tools]);
 	const outputFormats = useMemo(() => getUniqueValues(tools, "outputFormat"), [tools]);
 
-	const filteredTools = useMemo(() => {
-		const normalizedQuery = query.trim().toLowerCase();
-
-		return tools.filter((tool) => {
-			const matchesQuery =
-				normalizedQuery.length === 0 ||
-				tool.name.toLowerCase().includes(normalizedQuery) ||
-				tool.jobToBeDone.toLowerCase().includes(normalizedQuery) ||
-				tool.tip.toLowerCase().includes(normalizedQuery);
-			const matchesPhase = phase === "all" || tool.tags.lessonPhase.includes(phase);
-			const matchesFormat = format === "all" || tool.tags.outputFormat.includes(format);
-			const matchesCostType = matchesCost(tool, costType);
-
-			return matchesQuery && matchesPhase && matchesFormat && matchesCostType;
-		});
-	}, [costType, format, phase, query, tools]);
+	const filteredTools = useMemo(
+		() => filterTools(tools, { query, phase, format, costType }),
+		[costType, format, phase, query, tools],
+	);
 
 	const resetFilters = () => {
 		setQuery("");
