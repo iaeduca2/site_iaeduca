@@ -1,21 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ToolGallery from "../components/ToolGallery";
+import { getTools } from "../lib/tools";
+
+const tools = await getTools();
 ---
 
 <Layout>
-	<section class="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
-		<h1 class="text-2xl font-bold text-ink md:text-3xl">
-			Ferramentas de IA para a sala de aula
-		</h1>
-		<p class="mt-3 max-w-2xl text-base text-ink-muted">
-			Um catálogo curado de ferramentas de Inteligência Artificial para apoiar
-			o planejamento, a execução e a avaliação das suas aulas.
-		</p>
-
-		<p class="mt-10 rounded-lg border border-border bg-surface p-6 text-sm text-ink-muted">
-			Checkpoint visual 1: layout base com Header e Footer. A galeria de
-			ferramentas será adicionada na próxima fase.
-		</p>
-	</section>
+	<ToolGallery client:load tools={tools} />
 </Layout>
 
