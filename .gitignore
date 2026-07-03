@@ -20,3 +20,4 @@ EBOOK IA.pdf
 .agents/.env.*
 .agents/**/*.secrets.*
 .agents/**/*local.mcp_config.json
+.vercel

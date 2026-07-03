@@ -6,6 +6,29 @@ import {
 	getUniqueValues,
 } from "../lib/tool-filters";
 
+/* Icon mapping for tools */
+const toolIcons: Record<string, string> = {
+	ChatGPT: "💬",
+	Claude: "🤖",
+	Perplexity: "🔍",
+	Gemini: "✨",
+	Copilot: "🚀",
+	"DALL-E": "🖼️",
+	Midjourney: "🎨",
+	Runway: "🎬",
+	ElevenLabs: "🎙️",
+	Synthesia: "🎥",
+	Canva: "📐",
+	Typeform: "📋",
+	Quillbot: "✍️",
+	Grammarly: "📝",
+	Jasper: "💡",
+};
+
+function getIconForTool(toolName: string): string {
+	return toolIcons[toolName] || "🛠️";
+}
+
 interface ToolGalleryProps {
 	tools: Tool[];
 }
@@ -212,24 +235,28 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 			</div>
 
 			<div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-				{filteredTools.map((tool) => (
-					<article
-						key={tool.id}
-						className="group overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(22,65,148,0.08)]"
-					>
-						<div className="aspect-[16/10] overflow-hidden bg-neutral-bg">
-							<img
-								src={tool.screenshotUrl}
-								alt={`Captura da página inicial de ${tool.name}`}
-								className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-							/>
+			{filteredTools.map((tool, index) => (
+				<article
+					key={tool.id}
+					className="group overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(22,65,148,0.08)] animate-fadeInUp"
+					style={{ animationDelay: `${index * 50}ms` }}
+				>
+					<div className="relative aspect-[16/10] overflow-hidden bg-neutral-bg">
+						<img
+							src={tool.screenshotUrl}
+							alt={`Captura da página inicial de ${tool.name}`}
+							className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+						/>
+						<div className="absolute top-3 left-3 rounded-full bg-white shadow-md p-2 text-lg">
+							{getIconForTool(tool.name)}
 						</div>
+					</div>
 
-						<div className="space-y-4 p-5">
-							<div className="flex items-start justify-between gap-3">
-								<div>
-									<h2 className="text-lg font-bold text-ink">{tool.name}</h2>
-									<p className="mt-1 text-sm text-ink-muted">{tool.jobToBeDone}</p>
+					<div className="space-y-4 p-5">
+						<div className="flex items-start justify-between gap-3">
+							<div>
+								<h2 className="text-fluid-lg font-bold text-ink">{tool.name}</h2>
+								<p className="mt-1 text-fluid-sm text-ink-muted">{tool.jobToBeDone}</p>
 								</div>
 								<span className="rounded-full bg-primary-tint px-2.5 py-1 text-xs font-semibold text-primary">
 									{formatCostType(tool.tags.costType)}
@@ -302,7 +329,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						closeDialog();
 					}
 				}}
-				className="w-[min(92vw,48rem)] rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop:bg-black/50"
+				className="w-[min(92vw,48rem)] rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop:bg-black/40 backdrop-blur-md"
 			>
 				{selectedTool ? (
 					<div className="grid gap-0 md:grid-cols-[1.1fr_0.9fr]">
@@ -317,12 +344,12 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						<div className="space-y-4 p-6 md:p-7">
 							<div className="flex items-start justify-between gap-4">
 								<div>
-									<p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-										Detalhe da ferramenta
-									</p>
-									<h2 className="mt-2 text-2xl font-bold text-ink">
-										{selectedTool.name}
-									</h2>
+							<p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+								Detalhe da ferramenta
+							</p>
+							<h2 className="mt-2 text-fluid-lg font-bold text-ink">
+								{selectedTool.name}
+							</h2>
 								</div>
 								<button
 									type="button"
