@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Tokens derivados de DESIGN.md — fonte de verdade visual do projeto. */
+@theme {
+	/* Colors */
+	--color-primary: #164194;
+	--color-primary-hover: #102f6e;
+	--color-primary-tint: #e8edf7;
+	--color-accent: #e84910;
+	--color-accent-hover: #c93d0d;
+	--color-accent-tint: #fdeae2;
+	--color-neutral-bg: #f4f5f7;
+	--color-surface: #ffffff;
+	--color-ink: #1b1f27;
+	--color-ink-muted: #5b6472;
+	--color-border: #e2e5ea;
+
+	/* Typography */
+	--font-sans: "Inter", system-ui, sans-serif;
+
+	/* Rounded */
+	--radius-sm: 6px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+
+	/* Spacing extras (além da escala padrão do Tailwind) */
+	--spacing-2xl: 64px;
+}
+
+body {
+	background-color: var(--color-neutral-bg);
+	color: var(--color-ink);
+	font-family: var(--font-sans);
+}
