@@ -106,3 +106,27 @@ body {
 .auto-fit-grid {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+/* Dialog Centering */
+dialog {
+	position: fixed;
+	margin: auto;
+	inset: 0;
+	max-width: 48rem;
+	width: calc(100% - 2rem);
+	max-height: 90vh;
+	overflow-y: auto;
+}
+
+dialog::backdrop {
+	animation: fadeInBackdrop 0.3s ease-out forwards;
+}
+
+@keyframes fadeInBackdrop {
+	from {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	to {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+}

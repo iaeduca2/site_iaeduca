@@ -329,7 +329,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						closeDialog();
 					}
 				}}
-				className="w-[min(92vw,48rem)] rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop:bg-black/40 backdrop-blur-md animate-scaleIn"
+				className="rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop-blur-md animate-scaleIn"
 			>
 				{selectedTool ? (
 					<div className="grid gap-0 md:grid-cols-[1.1fr_0.9fr]">
