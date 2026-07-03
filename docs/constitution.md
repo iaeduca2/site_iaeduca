@@ -15,7 +15,7 @@ Sync Impact Report
 Every new experience MUST be implemented on top of Astro as the default runtime foundation, with content-oriented pages and layouts organized in the native structure under src/pages and src/layouts. React MUST be used only for interactive islands and client-side state, and the curated tools gallery and its filters MUST be implemented as a React-encapsulated component loaded with client:load so global filter state remains isolated and maintainable. This preserves performance and keeps the architecture ready for future content expansion.
 
 ### II. Identidade Visual e Design System
-The product MUST follow a mobile-first, modern visual language aligned with the SENAI brand manual. Tailwind CSS MUST be used for styling, and the primary brand colors MUST be configured in tailwind.config.mjs as Azul Principal (#164194) and Laranja SENAI (#E84910). shadcn/ui MAY be adopted when it fits the Astro and React environment without introducing unnecessary complexity. This ensures consistency across the interface and future pages.
+The product MUST follow a mobile-first, modern visual language aligned with the SENAI brand manual. Tailwind CSS MUST be used for styling, with the primary brand colors defined through the CSS-first v4 setup in src/styles/global.css via @theme as Azul Principal (#164194) and Laranja SENAI (#E84910). shadcn/ui MAY be adopted when it fits the Astro and React environment without introducing unnecessary complexity. This ensures consistency across the interface and future pages.
 
 ### III. Camada de Dados e Extensibilidade
 The MVP (Minimum Viable Product) MUST read curated educational tool data from a dedicated data/tools.json file through asynchronous loading, and any search or filtering logic MUST be abstracted behind a reusable data-access layer so it can later be replaced by a relational database or BaaS service such as Supabase without rewriting the whole experience. This keeps the initial product simple while preserving a scalable data strategy.
@@ -40,4 +40,4 @@ This constitution supersedes informal practices for architecture, content, and i
 
 All repository changes MUST be evaluated against these principles. If a conflict is unavoidable, the exception MUST be temporary, documented, and reviewed by the maintainers.
 
-**Version**: 1.1.0 | **Ratified**: 2026-06-30 | **Last Amended**: 2026-07-01
+**Version**: 1.2.0 | **Ratified**: 2026-06-30 | **Last Amended**: 2026-07-03
