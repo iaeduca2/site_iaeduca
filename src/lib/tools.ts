@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export type CostType = "Free" | "Freemium" | "Paid" | "Trial";
 
@@ -17,9 +18,9 @@ export interface Tool {
 	screenshotUrl: string;
 }
 
-const toolsFileUrl = new URL("../../data/tools.json", import.meta.url);
+const toolsFilePath = join(process.cwd(), "data", "tools.json");
 
 export async function getTools(): Promise<Tool[]> {
-	const rawTools = await readFile(toolsFileUrl, "utf8");
+	const rawTools = await readFile(toolsFilePath, "utf8");
 	return JSON.parse(rawTools) as Tool[];
 }

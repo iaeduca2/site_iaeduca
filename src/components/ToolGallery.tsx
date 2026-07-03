@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Tool } from "../lib/tools";
 
 interface ToolGalleryProps {
@@ -15,11 +15,29 @@ function matchesCost(tool: Tool, costType: string) {
 	return costType === "all" || tool.tags.costType === costType;
 }
 
+function formatCostType(costType: Tool["tags"]["costType"]) {
+	switch (costType) {
+		case "Free":
+			return "Gratuita";
+		case "Freemium":
+			return "Freemium";
+		case "Trial":
+			return "Teste grátis";
+		case "Paid":
+			return "Paga";
+		default:
+			return costType;
+	}
+}
+
 export default function ToolGallery({ tools }: ToolGalleryProps) {
 	const [query, setQuery] = useState("");
 	const [phase, setPhase] = useState("all");
 	const [format, setFormat] = useState("all");
 	const [costType, setCostType] = useState("all");
+	const [selectedToolId, setSelectedToolId] = useState<string | null>(null);
+	const dialogRef = useRef<HTMLDialogElement | null>(null);
+	const lastTriggerRef = useRef<HTMLButtonElement | null>(null);
 
 	const lessonPhases = useMemo(() => getUniqueValues(tools, "lessonPhase"), [tools]);
 	const outputFormats = useMemo(() => getUniqueValues(tools, "outputFormat"), [tools]);
@@ -46,6 +64,33 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 		setPhase("all");
 		setFormat("all");
 		setCostType("all");
+	};
+
+	const selectedTool = useMemo(
+		() => tools.find((tool) => tool.id === selectedToolId) ?? null,
+		[selectedToolId, tools],
+	);
+
+	useEffect(() => {
+		const dialog = dialogRef.current;
+
+		if (!dialog) {
+			return;
+		}
+
+		if (selectedTool && !dialog.open) {
+			dialog.showModal();
+			return;
+		}
+
+		if (!selectedTool && dialog.open) {
+			dialog.close();
+			lastTriggerRef.current?.focus();
+		}
+	}, [selectedTool]);
+
+	const closeDialog = () => {
+		setSelectedToolId(null);
 	};
 
 	return (
@@ -187,14 +232,26 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 								{tool.tip}
 							</p>
 
-							<a
-								href={tool.url}
-								target="_blank"
-								rel="noreferrer"
-								className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-primary-hover"
-							>
-								Acessar ferramenta
-							</a>
+							<div className="flex flex-wrap gap-3">
+								<button
+									type="button"
+									onClick={(event) => {
+										lastTriggerRef.current = event.currentTarget;
+										setSelectedToolId(tool.id);
+									}}
+									className="inline-flex items-center rounded-md border border-border bg-white px-3.5 py-2 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary-tint"
+								>
+									Ver detalhes
+								</button>
+								<a
+									href={tool.url}
+									target="_blank"
+									rel="noreferrer"
+									className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-primary-hover"
+								>
+									Acessar ferramenta
+								</a>
+							</div>
 						</div>
 					</article>
 				))}
@@ -205,6 +262,92 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 					Nenhuma ferramenta encontrada com os filtros atuais.
 				</div>
 			) : null}
+
+			<dialog
+				ref={dialogRef}
+				onCancel={(event) => {
+					event.preventDefault();
+					closeDialog();
+				}}
+				onClick={(event) => {
+					if (event.target === event.currentTarget) {
+						closeDialog();
+					}
+				}}
+				className="w-[min(92vw,48rem)] rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop:bg-black/50"
+			>
+				{selectedTool ? (
+					<div className="grid gap-0 md:grid-cols-[1.1fr_0.9fr]">
+						<div className="bg-neutral-bg">
+							<img
+								src={selectedTool.screenshotUrl}
+								alt={`Captura da página inicial de ${selectedTool.name}`}
+								className="h-full w-full object-cover"
+							/>
+						</div>
+
+						<div className="space-y-4 p-6 md:p-7">
+							<div className="flex items-start justify-between gap-4">
+								<div>
+									<p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+										Detalhe da ferramenta
+									</p>
+									<h2 className="mt-2 text-2xl font-bold text-ink">
+										{selectedTool.name}
+									</h2>
+								</div>
+								<button
+									type="button"
+									onClick={closeDialog}
+									className="rounded-md border border-border px-3 py-2 text-sm font-semibold text-ink-muted transition hover:border-primary hover:text-primary"
+								>
+									Fechar
+								</button>
+							</div>
+
+							<p className="text-sm leading-6 text-ink-muted">
+								{selectedTool.jobToBeDone}
+							</p>
+
+							<div className="flex flex-wrap gap-2">
+								{selectedTool.tags.lessonPhase.map((tag) => (
+									<span
+										key={tag}
+										className="rounded-full bg-neutral-bg px-2.5 py-1 text-xs font-medium text-ink-muted"
+									>
+										{tag}
+									</span>
+								))}
+								{selectedTool.tags.outputFormat.map((tag) => (
+									<span
+										key={tag}
+										className="rounded-full bg-accent-tint px-2.5 py-1 text-xs font-medium text-accent-hover"
+									>
+										{tag}
+									</span>
+								))}
+								<span className="rounded-full bg-primary-tint px-2.5 py-1 text-xs font-semibold text-primary">
+									{formatCostType(selectedTool.tags.costType)}
+								</span>
+							</div>
+
+							<div className="space-y-2 rounded-lg border border-border bg-white p-4">
+								<p className="text-sm font-semibold text-ink">Dica SENAI</p>
+								<p className="text-sm leading-6 text-ink-muted">{selectedTool.tip}</p>
+							</div>
+
+							<a
+								href={selectedTool.url}
+								target="_blank"
+								rel="noreferrer"
+								className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-primary-hover"
+							>
+								Acessar ferramenta
+							</a>
+						</div>
+					</div>
+				) : null}
+			</dialog>
 		</section>
 	);
 }
