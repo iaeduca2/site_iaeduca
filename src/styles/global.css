@@ -63,8 +63,43 @@ body {
 	}
 }
 
+@keyframes scaleIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes slideInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .animate-fadeInUp {
 	animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-scaleIn {
+	animation: scaleIn 0.4s ease-out forwards;
+}
+
+.animate-slideInDown {
+	animation: slideInDown 0.5s ease-out forwards;
+}
+
+/* Interactive Transitions */
+.transition-smooth {
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Responsive Grid */

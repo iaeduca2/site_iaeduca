@@ -329,7 +329,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						closeDialog();
 					}
 				}}
-				className="w-[min(92vw,48rem)] rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop:bg-black/40 backdrop-blur-md"
+				className="w-[min(92vw,48rem)] rounded-lg border border-border bg-surface p-0 shadow-[0_24px_80px_rgba(27,31,39,0.28)] backdrop:bg-black/40 backdrop-blur-md animate-scaleIn"
 			>
 				{selectedTool ? (
 					<div className="grid gap-0 md:grid-cols-[1.1fr_0.9fr]">
@@ -395,7 +395,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 								href={selectedTool.url}
 								target="_blank"
 								rel="noreferrer"
-								className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-primary-hover"
+								className="inline-flex items-center rounded-md bg-primary px-3.5 py-2 text-sm font-semibold text-white transition-smooth hover:bg-primary-hover"
 							>
 								Acessar ferramenta
 							</a>
