@@ -1,0 +1,242 @@
+[
+  {
+    "id": "tango",
+    "name": "Tango",
+    "url": "https://tango.us",
+    "jobToBeDone": "Permite criar guias de treinamento passo a passo para processos de software, de forma rápida e eficiente, em apenas alguns minutos. Esses guias podem ser personalizados para atender às necessidades específicas de alunos e professores. [cite: 13, 14]",
+    "tags": {
+      "faseAula": ["Planejamento", "Rotinas Administrativas", "Execução"],
+      "formatoSaida": ["Texto", "Imagem"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Você pode fazer todo o processo e o Tango faz automaticamente capturas de tela, anotações e descrições. [cite: 15]"
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "url": "https://gamma.app",
+    "jobToBeDone": "Ferramenta para a criação de slides de um jeito fácil e prático. Em poucos segundos, é capaz de transformar um texto em uma apresentação com design completo para sua aula, possibilitando adicionar gifs, vídeos, gráficos e até mesmo sites. [cite: 17, 18]",
+    "tags": {
+      "faseAula": ["Planejamento", "Execução"],
+      "formatoSaida": ["Slides"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "A ferramenta permite edição colaborativa em tempo real e até exportar os slides em formato compatível com o PowerPoint e Google Slides. [cite: 20]"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "url": "https://www.perplexity.ai",
+    "jobToBeDone": "Mecanismo de busca de IA que fornece respostas confiáveis para qualquer pergunta. Auxilia alunos e professores a obterem informações atuais rapidamente, além de servir de base para criar conteúdos contextuais em materiais de estudo. [cite: 21, 22, 23]",
+    "tags": {
+      "faseAula": ["Pesquisa", "Planejamento"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Na aba DISCOVER, você encontra as últimas notícias sobre diversos assuntos da atualidade, com a curadoria da equipe da ferramenta. [cite: 24, 25]"
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com",
+    "jobToBeDone": "Sistema de IA capaz de gerar respostas humanizadas. Funciona como um grande auxílio para os educadores criarem a base de planos de aula detalhados, corrigirem trabalhos e provas automaticamente e gerarem testes personalizados. [cite: 27, 28, 29]",
+    "tags": {
+      "faseAula": ["Planejamento", "Avaliação", "Rotinas Administrativas"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Seja específico nas instruções para obter respostas mais relevantes e modifique as perguntas para conseguir extrair mais informações da ferramenta. [cite: 30]"
+  },
+  {
+    "id": "character-ai",
+    "name": "Character.ai",
+    "url": "https://character.ai",
+    "jobToBeDone": "Plataforma que oferece chatbots baseados em personagens alimentados por inteligência artificial. Permite criar personagens interativos para responder a perguntas dos alunos e automatizar respostas a dúvidas frequentes. [cite: 31, 32, 33]",
+    "tags": {
+      "faseAula": ["Execução", "Rotinas Administrativas"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Imagine você ou seus alunos conversando com Satoru Gojo, Hermione ou Elon Musk para praticar novos idiomas, debater ideias ou treinar entrevistas. [cite: 34, 35]"
+  },
+  {
+    "id": "dust",
+    "name": "Dust",
+    "url": "https://dust.tt",
+    "jobToBeDone": "Plataforma que permite a criação de assistentes de inteligência artificial personalizados conectados a dados e bases de conhecimentos internos fornecidos pelo utilizador para responder perguntas e gerar relatórios. [cite: 36, 37]",
+    "tags": {
+      "faseAula": ["Planejamento", "Pesquisa", "Rotinas Administrativas"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita por 15 dias"
+    },
+    "dicaSenai": "Pergunte a Platão ou Steve Jobs. Coloque-os para discutir problemas com a IA alimentada pelos textos deles, gerando insights preciosos. [cite: 37]"
+  },
+  {
+    "id": "videoask",
+    "name": "VideoAsk",
+    "url": "https://www.videoask.com",
+    "jobToBeDone": "Plataforma de vídeo interativa que permite criar vídeos envolventes para entrevistas, questionários e feedbacks personalizados, facilitando avaliações orais e o acompanhamento de progresso em larga escala. [cite: 38, 39]",
+    "tags": {
+      "faseAula": ["Execução", "Avaliação"],
+      "formatoSaida": ["Vídeo", "Quizzes"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Você pode gravar sequências de vídeos distintas, que irão direcionar seus alunos de acordo com as respostas, personalizando a experiência pedagógica online. [cite: 40]"
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "url": "https://suno.com",
+    "jobToBeDone": "Permite que os utilizadores criem músicas completas em apenas alguns segundos usando comandos de texto simples. Oferece uma vasta gama de estilos para gerar músicas com os conteúdos das aulas. [cite: 41, 42]",
+    "tags": {
+      "faseAula": ["Planejamento", "Execução"],
+      "formatoSaida": ["Áudio"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Crie suas próprias letras no ChatGPT e utilize o custom mode do SUNO para escolher o ritmo e personalizar a letra da música. [cite: 43]"
+  },
+  {
+    "id": "audiopen",
+    "name": "AudioPen",
+    "url": "https://audiopen.ai",
+    "jobToBeDone": "Ferramenta de transcrição de áudio que converte gravações de voz em texto limpo. Promove acessibilidade e dinamismo para a captação de ideias e produção de resumos ou roteiros de estudo. [cite: 44, 46, 47]",
+    "tags": {
+      "faseAula": ["Planejamento", "Execução", "Rotinas Administrativas"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "A transcrição das aulas pode ser utilizada como base para a criação de materiais didáticos complementares, como resumos, exercícios e apresentações. [cite: 47]"
+  },
+  {
+    "id": "grain",
+    "name": "Grain",
+    "url": "https://grain.com",
+    "jobToBeDone": "Ferramenta para gravar e transcrever reuniões e aulas em vídeo de forma automática e online, fornecendo notas detalhadas para revisões posteriores sem a necessidade de escrever durante a exposição. [cite: 48, 50]",
+    "tags": {
+      "faseAula": ["Execução", "Rotinas Administrativas"],
+      "formatoSaida": ["Texto", "Vídeo"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "A ferramenta permite fazer cortes dos vídeos, para serem utilizados em suas redes sociais, em segundos. [cite: 51]"
+  },
+  {
+    "id": "switchy",
+    "name": "Switchy",
+    "url": "https://www.switchy.io",
+    "jobToBeDone": "Plataforma de encurtamento e gerenciamento de links. Permite gerar QRCodes para compartilhar recursos didáticos de forma organizada e rastrear o engajamento através de métricas de cliques em tempo real. [cite: 52, 53]",
+    "tags": {
+      "faseAula": ["Rotinas Administrativas", "Execução"],
+      "formatoSaida": ["Links"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Você pode usar os links gerados para criar jogos 'caça ao tesouro' deixando pistas para os alunos descobrirem algum conteúdo especial e ganhar pontos extras. [cite: 54]"
+  },
+  {
+    "id": "adobe-podcast",
+    "name": "Adobe Podcast",
+    "url": "https://podcast.adobe.com",
+    "jobToBeDone": "Ferramenta que transforma qualquer áudio gravado para a qualidade de um estúdio profissional, removendo ruídos de fundo, aplicando equalização automática e aprimorando a clareza da voz do professor. [cite: 55, 56]",
+    "tags": {
+      "faseAula": ["Planejamento", "Execução"],
+      "formatoSaida": ["Áudio"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Utilize um editor de vídeos para separar o áudio do vídeo antes de encaminhar para a ferramenta, depois junte os dois novamente no mesmo editor. [cite: 57]"
+  },
+  {
+    "id": "chatpdf",
+    "name": "ChatPDF",
+    "url": "https://www.chatpdf.com",
+    "jobToBeDone": "Permite extrair informações específicas de documentos longos e realizar pesquisas diretas interagindo com um chat de Inteligência Artificial alimentado pelo próprio ficheiro PDF enviado. [cite: 58]",
+    "tags": {
+      "faseAula": ["Pesquisa", "Planejamento"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Você pode fazer o upload de um PDF em qualquer língua, que a ferramenta responderá todas as suas perguntas em português, inglês ou outra língua que você desejar. [cite: 59]"
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo.Ai",
+    "url": "https://leonardo.ai",
+    "jobToBeDone": "Ferramenta de criação de arte digital assistida por IA que gera imagens de alta qualidade a partir de descrições textuais simples, ideal para ilustrar aulas, apostilas e apresentações. [cite: 60, 62]",
+    "tags": {
+      "faseAula": ["Planejamento", "Execução"],
+      "formatoSaida": ["Imagem"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Você pode usar suas próprias imagens como referência para a criação de novas imagens, mantendo o estilo visual e características principais da sequência enviada. [cite: 64]"
+  },
+  {
+    "id": "edpuzzle",
+    "name": "Edpuzzle",
+    "url": "https://edpuzzle.com",
+    "jobToBeDone": "Permite adicionar perguntas, comentários e notas interativas diretamente em vídeos didáticos, ajudando a manter os alunos focados e fornecendo métricas de avaliação para o professor. [cite: 65, 67]",
+    "tags": {
+      "faseAula": ["Execução", "Avaliação"],
+      "formatoSaida": ["Vídeo", "Quizzes"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "A ferramenta também conta com gravação de tela. Crie e edite seus próprios vídeos para aulas perfeitamente adaptadas às necessidades de seus alunos. [cite: 68, 69]"
+  },
+  {
+    "id": "oorion",
+    "name": "OOrion",
+    "url": "https://www.oorion.fr",
+    "jobToBeDone": "Aplicativo de tecnologia assistiva focado em acessibilidade para pessoas com deficiência visual. Utiliza a câmara e IA para identificar objetos do ambiente, ler sinalizações e documentos táteis. [cite: 70, 71]",
+    "tags": {
+      "faseAula": ["Execução"],
+      "formatoSaida": ["Acessibilidade"],
+      "custo": "Gratuita"
+    },
+    "dicaSenai": "Basta escanear o ambiente com a câmera do seu smartphone e obter instantaneamente descrições dos objetos ao seu redor. [cite: 74]"
+  },
+  {
+    "id": "magicschool",
+    "name": "MagicSchool",
+    "url": "https://www.magicschool.ai",
+    "jobToBeDone": "Plataforma integrada com mais de 60 micro-ferramentas de IA focadas em educação. Auxilia na criação de avaliações, planos de aula, comunicação clara e relatórios pedagógicos customizados. [cite: 75, 76]",
+    "tags": {
+      "faseAula": ["Planejamento", "Avaliação", "Rotinas Administrativas"],
+      "formatoSaida": ["Texto", "Quizzes"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Caso tenha dificuldade com o inglês, utilize o recurso 'traduzir para o português' no navegador Google Chrome, clicando no botão direito do mouse dentro do site. [cite: 77]"
+  },
+  {
+    "id": "elicit",
+    "name": "Elicit",
+    "url": "https://elicit.com",
+    "jobToBeDone": "Ferramenta de automação de pesquisa académica que utiliza IA para mapear literatura científica, extrair dados estatísticos cruciais e sintetizar conceitos de milhões de artigos. [cite: 78, 79]",
+    "tags": {
+      "faseAula": ["Pesquisa", "Planejamento"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Você pode fazer o upload de um PDF em qualquer língua, que a ferramenta fará as buscas em português, inglês ou outra língua que você desejar. [cite: 81]"
+  },
+  {
+    "id": "yippity",
+    "name": "Yippity",
+    "url": "https://yippity.io/",
+    "jobToBeDone": "Gera automaticamente quizzes e flashcards de revisão (em formatos como escolha múltipla, verdadeiro/falso ou preenchimento de lacunas) a partir de blocos de texto ou páginas web indicadas. [cite: 82, 83]",
+    "tags": {
+      "faseAula": ["Planejamento", "Avaliação"],
+      "formatoSaida": ["Quizzes"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Caso tenha dificuldade com o inglês, utilize o recurso 'traduzir para o português' no navegador Google Chrome, clicando no botão direito do mouse dentro do site. [cite: 85]"
+  },
+  {
+    "id": "chatgpt4youtube",
+    "name": "ChatGPT4YouTube",
+    "url": "https://chatgpt4youtube.com",
+    "jobToBeDone": "Extensão para o navegador Chrome que utiliza o motor do ChatGPT para sintetizar e gerar resumos textuais estruturados de vídeos longos do YouTube em segundos, acelerando a curadoria de conteúdo. [cite: 86, 87]",
+    "tags": {
+      "faseAula": ["Pesquisa", "Planejamento"],
+      "formatoSaida": ["Texto"],
+      "custo": "Gratuita com limitações"
+    },
+    "dicaSenai": "Economize tempo e aprenda mais rápido utilizando a ferramenta em cursos ou tutoriais, notícias, entrevistas e seminários acadêmicos no youtube. [cite: 88]"
+  }
+]
