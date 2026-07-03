@@ -234,7 +234,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 				) : null}
 			</div>
 
-			<div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+			<div className="mt-8 grid gap-5 auto-fit-grid">
 			{filteredTools.map((tool, index) => (
 				<article
 					key={tool.id}
@@ -255,7 +255,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						</span>
 					</div>
 
-					<div className="space-y-4 p-5">
+				<div className="space-y-5 p-6">
 						<div className="flex items-start justify-between gap-3">
 							<div>
 								<h2 className="text-fluid-lg font-bold text-ink">{tool.name}</h2>

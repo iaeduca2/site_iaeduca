@@ -8,6 +8,8 @@ colors:
   primary-tint: "#E8EDF7"
   accent: "#E84910"
   accent-hover: "#C93D0D"
+  accent-light: "#F5C4A8"
+  accent-dark: "#A72F0A"
   accent-tint: "#FDEAE2"
   neutral-bg: "#F4F5F7"
   surface: "#FFFFFF"
