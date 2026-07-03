@@ -14,3 +14,9 @@ dist/
 
 # Source material (large binary, not needed for build)
 EBOOK IA.pdf
+
+# Never commit real secrets used by AI agent tooling
+.agents/.env
+.agents/.env.*
+.agents/**/*.secrets.*
+.agents/**/*local.mcp_config.json
