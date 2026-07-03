@@ -39,6 +39,41 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 		[selectedToolId, tools],
 	);
 
+	const hasActiveFilters =
+		query.trim().length > 0 || phase !== "all" || format !== "all" || costType !== "all";
+
+	const activeFilterChips = [
+		query.trim().length > 0
+			? {
+				label: `Busca: ${query.trim()}`,
+				onClear: () => setQuery(""),
+			}
+			: null,
+		phase !== "all"
+			? {
+				label: `Fase: ${phase}`,
+				onClear: () => setPhase("all"),
+			}
+			: null,
+		format !== "all"
+			? {
+				label: `Formato: ${format}`,
+				onClear: () => setFormat("all"),
+			}
+			: null,
+		costType !== "all"
+			? {
+				label: `Custo: ${formatCostType(costType as "Free" | "Freemium" | "Paid" | "Trial")}`,
+				onClear: () => setCostType("all"),
+			}
+			: null,
+	].filter(Boolean) as Array<{ label: string; onClear: () => void }>;
+
+	const selectBaseClass =
+		"rounded-md border bg-white px-3 py-2 text-sm text-ink outline-none transition focus:ring-2 focus:ring-primary/20";
+	const selectActiveClass = "border-primary bg-primary-tint/30";
+	const selectIdleClass = "border-border";
+
 	useEffect(() => {
 		const dialog = dialogRef.current;
 
@@ -94,7 +129,9 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						<select
 							value={phase}
 							onChange={(event) => setPhase(event.target.value)}
-							className="rounded-md border border-border bg-white px-3 py-2 text-sm text-ink outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+							className={`${selectBaseClass} ${
+								phase === "all" ? selectIdleClass : selectActiveClass
+							}`}
 						>
 							<option value="all">Todas</option>
 							{lessonPhases.map((value) => (
@@ -110,7 +147,9 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						<select
 							value={format}
 							onChange={(event) => setFormat(event.target.value)}
-							className="rounded-md border border-border bg-white px-3 py-2 text-sm text-ink outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+							className={`${selectBaseClass} ${
+								format === "all" ? selectIdleClass : selectActiveClass
+							}`}
 						>
 							<option value="all">Todos</option>
 							{outputFormats.map((value) => (
@@ -126,7 +165,9 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						<select
 							value={costType}
 							onChange={(event) => setCostType(event.target.value)}
-							className="rounded-md border border-border bg-white px-3 py-2 text-sm text-ink outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+							className={`${selectBaseClass} ${
+								costType === "all" ? selectIdleClass : selectActiveClass
+							}`}
 						>
 							<option value="all">Todos</option>
 							<option value="Free">Free</option>
@@ -138,17 +179,36 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 				</div>
 
 				<div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-ink-muted">
-					<p>
+					<p className="font-medium text-ink">
 						{filteredTools.length} de {tools.length} ferramentas visíveis
 					</p>
 					<button
 						type="button"
 						onClick={resetFilters}
-						className="rounded-full border border-border px-3 py-1.5 font-medium text-primary transition hover:border-primary hover:bg-primary-tint"
+						disabled={!hasActiveFilters}
+						className="rounded-full border border-border px-3 py-1.5 font-medium text-primary transition hover:border-primary hover:bg-primary-tint disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:border-border disabled:hover:bg-transparent"
 					>
 						Limpar filtros
 					</button>
 				</div>
+
+				{activeFilterChips.length > 0 ? (
+					<div className="mt-4 flex flex-wrap gap-2">
+						{activeFilterChips.map((chip) => (
+							<button
+								key={chip.label}
+								type="button"
+								onClick={chip.onClear}
+								className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary-tint px-3 py-1.5 text-sm font-medium text-primary transition hover:border-primary hover:bg-white"
+							>
+								<span>{chip.label}</span>
+								<span aria-hidden="true" className="text-base leading-none">
+									×
+								</span>
+							</button>
+						))}
+					</div>
+				) : null}
 			</div>
 
 			<div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
@@ -172,7 +232,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 									<p className="mt-1 text-sm text-ink-muted">{tool.jobToBeDone}</p>
 								</div>
 								<span className="rounded-full bg-primary-tint px-2.5 py-1 text-xs font-semibold text-primary">
-									{tool.tags.costType}
+									{formatCostType(tool.tags.costType)}
 								</span>
 							</div>
 
