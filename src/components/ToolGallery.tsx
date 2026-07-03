@@ -238,7 +238,7 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 			{filteredTools.map((tool, index) => (
 				<article
 					key={tool.id}
-					className="group overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(22,65,148,0.08)] animate-fadeInUp"
+					className="group overflow-hidden rounded-lg border border-border bg-surface transition hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(22,65,148,0.08)] hover:bg-white/50 animate-fadeInUp"
 					style={{ animationDelay: `${index * 50}ms` }}
 				>
 					<div className="relative aspect-[16/10] overflow-hidden bg-neutral-bg">
@@ -250,6 +250,9 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 						<div className="absolute top-3 left-3 rounded-full bg-white shadow-md p-2 text-lg">
 							{getIconForTool(tool.name)}
 						</div>
+						<span className="absolute top-3 right-3 rounded-full bg-primary shadow-md px-2.5 py-1 text-xs font-semibold text-white">
+							{formatCostType(tool.tags.costType)}
+						</span>
 					</div>
 
 					<div className="space-y-4 p-5">
@@ -258,9 +261,6 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 								<h2 className="text-fluid-lg font-bold text-ink">{tool.name}</h2>
 								<p className="mt-1 text-fluid-sm text-ink-muted">{tool.jobToBeDone}</p>
 								</div>
-								<span className="rounded-full bg-primary-tint px-2.5 py-1 text-xs font-semibold text-primary">
-									{formatCostType(tool.tags.costType)}
-								</span>
 							</div>
 
 							<div className="flex flex-wrap gap-2">
@@ -282,8 +282,8 @@ export default function ToolGallery({ tools }: ToolGalleryProps) {
 								))}
 							</div>
 
-							<p className="text-sm text-ink-muted">
-								<strong className="font-semibold text-ink">Dica SENAI:</strong>{" "}
+<p className="rounded-md border border-accent/20 bg-accent-tint p-3 text-sm text-ink-muted">
+							<strong className="font-semibold text-accent">Dica SENAI:</strong>{" "}
 								{tool.tip}
 							</p>
 
