@@ -109,7 +109,7 @@ async function validateTool(tool) {
       errors.push('tags.outputFormat must have at least 1 item');
     }
 
-    const validCostTypes = ['Gratuita', 'Freemium', 'Paga', 'Código Aberto'];
+    const validCostTypes = ['Free', 'Freemium', 'Paid', 'Trial'];
     if (!validCostTypes.includes(tool.tags.costType)) {
       errors.push(`tags.costType must be one of: ${validCostTypes.join(', ')}`);
     }
