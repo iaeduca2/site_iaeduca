@@ -123,11 +123,24 @@ async function validateTool(tool) {
     }
   }
 
-  // Validate screenshot URL format
+  // Validate screenshot URL format or local path
   if (tool.screenshotUrl) {
-    const normalizedScreenshotUrl = validateUrl(tool.screenshotUrl);
-    if (!normalizedScreenshotUrl) {
-      errors.push(`Invalid screenshot URL format: ${tool.screenshotUrl}`);
+    if (tool.screenshotUrl.startsWith('/')) {
+      const localPath = path.join(__dirname, '../public', tool.screenshotUrl);
+      if (!fs.existsSync(localPath)) {
+        errors.push(`Local screenshot file not found: public${tool.screenshotUrl}`);
+      }
+    } else {
+      const normalizedScreenshotUrl = validateUrl(tool.screenshotUrl);
+      if (!normalizedScreenshotUrl) {
+        errors.push(`Invalid screenshot URL format: ${tool.screenshotUrl}`);
+      } else {
+        // Check screenshot accessibility for remote URLs only
+        const screenshotAccessible = await checkUrlAccessible(tool.screenshotUrl);
+        if (!screenshotAccessible) {
+          warnings.push(`⚠️  Screenshot URL not responding: ${tool.screenshotUrl}`);
+        }
+      }
     }
   }
 
@@ -136,14 +149,6 @@ async function validateTool(tool) {
     const urlAccessible = await checkUrlAccessible(tool.url);
     if (!urlAccessible) {
       warnings.push(`⚠️  URL not responding: ${tool.url}`);
-    }
-  }
-
-  // Check screenshot accessibility
-  if (tool.screenshotUrl && validateUrl(tool.screenshotUrl)) {
-    const screenshotAccessible = await checkUrlAccessible(tool.screenshotUrl);
-    if (!screenshotAccessible) {
-      warnings.push(`⚠️  Screenshot URL not responding: ${tool.screenshotUrl}`);
     }
   }
 
