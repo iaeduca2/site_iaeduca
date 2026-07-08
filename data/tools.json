@@ -242,7 +242,8 @@
     "tags": {
       "lessonPhase": [
         "Pesquisa",
-        "Planejamento"
+        "Planejamento",
+        "Execução"
       ],
       "outputFormat": [
         "Texto"
@@ -1450,18 +1451,21 @@
     "id": "canva-for-education",
     "name": "Canva For Education",
     "url": "https://www.canva.com/education",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma de design com assistentes de IA integrados para educadores.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
+        "Imagem",
+        "Slides",
         "Texto"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito para professores verificados"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Use os recursos de IA para criar apresentações completas e materiais gráficos em segundos.",
     "screenshotUrl": "/images/tools/canva-for-education.webp"
   },
   {
@@ -1727,20 +1731,21 @@
   },
   {
     "id": "enlightenai",
-    "name": "Enlightenai",
+    "name": "EnlightenAI",
     "url": "https://enlightenme.ai",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "IA focada em apoiar a correção de redações e tarefas.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Avaliação",
+        "Rotinas Administrativas"
       ],
       "outputFormat": [
         "Texto"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com plano premium"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Economize tempo recebendo sugestões de feedback personalizadas alinhadas aos critérios da rubrica.",
     "screenshotUrl": "/images/tools/enlightenai.webp"
   },
   {
@@ -1765,18 +1770,22 @@
     "id": "figma-for-education",
     "name": "Figma For Education",
     "url": "https://www.figma.com/education",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Ambiente colaborativo de design e quadro digital apoiado por IA.",
     "tags": {
       "lessonPhase": [
+        "Ideação",
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
+        "Imagem",
+        "Slides",
         "Texto"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito para estudantes e professores"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Use os murais e o assistente de IA FigJam para dinâmicas de brainstorm com a turma.",
     "screenshotUrl": "/images/tools/figma-for-education.webp"
   },
   {
@@ -1801,18 +1810,20 @@
     "id": "gibbly",
     "name": "Gibbly",
     "url": "https://www.gibbly.co",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Gerador de planos de aula, slides e questionários de revisão.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Planejamento",
+        "Avaliação"
       ],
       "outputFormat": [
-        "Texto"
+        "Quizzes",
+        "Slides"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Tokens gratuitos mensais"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie jogos de perguntas a partir de vídeos do YouTube ou textos para engajar a turma.",
     "screenshotUrl": "/images/tools/gibbly.webp"
   },
   {
@@ -1832,24 +1843,6 @@
     },
     "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
     "screenshotUrl": "/images/tools/glint.webp"
-  },
-  {
-    "id": "google-gemini",
-    "name": "Google Gemini",
-    "url": "https://gemini.google.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
-    "tags": {
-      "lessonPhase": [
-        "Execução"
-      ],
-      "outputFormat": [
-        "Texto"
-      ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
-    },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
-    "screenshotUrl": "/images/tools/google-gemini.webp"
   },
   {
     "id": "gradeasy-ai",
@@ -1929,7 +1922,7 @@
     "id": "hello-history",
     "name": "Hello History",
     "url": "https://www.hellohistory.ai",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Aplicativo para conversação simulada com figuras históricas famosas.",
     "tags": {
       "lessonPhase": [
         "Execução"
@@ -1938,9 +1931,9 @@
         "Texto"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com limites diários"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Promova debates entre alunos e personagens como Einstein ou Cleópatra para humanizar a história.",
     "screenshotUrl": "/images/tools/hello-history.webp"
   },
   {
@@ -2057,18 +2050,20 @@
     "id": "khanmigo",
     "name": "Khanmigo",
     "url": "https://www.khanmigo.ai",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Tutor inteligente e assistente pedagógico desenvolvido pela Khan Academy.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Planejamento"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Código"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito para professores nos EUA, pago para outros países"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Apoie os alunos individualmente em matemática e programação sem dar as respostas prontas.",
     "screenshotUrl": "/images/tools/khanmigo.webp"
   },
   {
@@ -2147,18 +2142,19 @@
     "id": "microsoft-copilot",
     "name": "Microsoft Copilot",
     "url": "https://copilot.microsoft.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Assistente conversacional da Microsoft para busca, escrita e análise de imagens.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Planejamento",
+        "Pesquisa"
       ],
       "outputFormat": [
         "Texto"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Peça para explicar conceitos complexos ou resumir artigos longos para preparar suas aulas.",
     "screenshotUrl": "/images/tools/microsoft-copilot.webp"
   },
   {
@@ -2219,18 +2215,19 @@
     "id": "prezi-ai",
     "name": "Prezi Ai",
     "url": "https://prezi.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Criação de apresentações dinâmicas e não-lineares com auxílio de IA.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Slides"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Plano gratuito básico e desconto para educadores"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Transforme roteiros e esboços em apresentações interativas com zoom e movimentos fluidos.",
     "screenshotUrl": "/images/tools/prezi-ai.webp"
   },
   {
@@ -2495,18 +2492,20 @@
     "id": "snorkl",
     "name": "Snorkl",
     "url": "https://snorkl.app",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma de explicações por áudio de alunos com feedback imediato.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Avaliação"
       ],
       "outputFormat": [
+        "Áudio",
         "Texto"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito para educadores"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Peça para os alunos gravarem a explicação de um conceito e a IA avaliará instantaneamente.",
     "screenshotUrl": "/images/tools/snorkl.webp"
   },
   {
@@ -2586,18 +2585,20 @@
     "id": "teachaid",
     "name": "Teachaid",
     "url": "https://www.teachaid.ca",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Assistente de IA completo para planejamento de aulas e avaliações.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Planejamento",
+        "Avaliação"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Slides"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com plano premium"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Prepare planos de unidades didáticas, diferenciações e atividades integradas em um só lugar.",
     "screenshotUrl": "/images/tools/teachaid.webp"
   },
   {
@@ -2802,36 +2803,39 @@
     "id": "wayground",
     "name": "Wayground",
     "url": "https://wayground.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma de gamificação para criar quizzes interativos e dinâmicos.",
     "tags": {
       "lessonPhase": [
+        "Avaliação",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Quizzes"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito para até 20 atividades"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Aproveite a IA para traduzir, simplificar perguntas e gerar explicações detalhadas de respostas.",
     "screenshotUrl": "/images/tools/wayground.webp"
   },
   {
     "id": "antimatter-sorcerer",
     "name": "Antimatter Sorcerer",
     "url": "http://antimatter.systems",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Criação de chatbots de IA focados em aprendizado baseado em memes.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Avaliação"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Imagem"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito para professores"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie desafios com memes e acompanhe o nível de proficiência dos alunos na plataforma.",
     "screenshotUrl": "/images/tools/antimatter-sorcerer.webp"
   },
   {
@@ -2873,57 +2877,22 @@
     "screenshotUrl": "/images/tools/beautiful-ai.webp"
   },
   {
-    "id": "canva-ai",
-    "name": "Canva AI",
-    "url": "https://www.canva.com/newsroom/news/canva-for-education-new-tools/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
-    "tags": {
-      "lessonPhase": [
-        "Execução"
-      ],
-      "outputFormat": [
-        "Texto"
-      ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
-    },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
-    "screenshotUrl": "/images/tools/canva-ai.webp"
-  },
-  {
-    "id": "chat-pdf",
-    "name": "Chat PDF",
-    "url": "https://www.chatpdf.com/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
-    "tags": {
-      "lessonPhase": [
-        "Execução"
-      ],
-      "outputFormat": [
-        "Texto"
-      ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
-    },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
-    "screenshotUrl": "/images/tools/chat-pdf.webp"
-  },
-  {
     "id": "curriculum-genie",
     "name": "Curriculum Genie",
     "url": "https://curriculumgenie.learning-genie.com/app/index.html#/login",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Gerador de planejamentos de unidades e aulas alinhadas a padrões.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Planejamento"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Slides"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Créditos gratuitos com upgrades opcionais"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Construa planos de aula estruturados e exporte diretamente para Google Docs e Slides.",
     "screenshotUrl": "/images/tools/curriculum-genie.webp"
   },
   {
@@ -2945,147 +2914,138 @@
     "screenshotUrl": "/images/tools/education-copilot.webp"
   },
   {
-    "id": "figjam-jambot-ai",
-    "name": "FigJam Jambot & AI",
-    "url": "https://www.figma.com/education/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
-    "tags": {
-      "lessonPhase": [
-        "Execução"
-      ],
-      "outputFormat": [
-        "Texto"
-      ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
-    },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
-    "screenshotUrl": "/images/tools/figjam-jambot-ai.webp"
-  },
-  {
     "id": "flintk12",
     "name": "FlintK12",
     "url": "https://www.flintk12.com/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma para criar atividades personalizadas com IA em ambiente seguro.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Avaliação"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Links"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito para professores individuais"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie chats de IA personalizados a partir de materiais específicos e dê feedback instantâneo.",
     "screenshotUrl": "/images/tools/flintk12.webp"
   },
   {
     "id": "formative-ai",
     "name": "Formative AI",
     "url": "http://formative.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma de avaliações que gera questões e feedbacks com IA.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Avaliação"
       ],
       "outputFormat": [
+        "Quizzes",
         "Texto"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com recursos premium"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie testes rápidos com acompanhamento em tempo real e dê feedbacks direcionados aos alunos.",
     "screenshotUrl": "/images/tools/formative-ai.webp"
   },
   {
     "id": "goblin-tools",
     "name": "Goblin Tools",
     "url": "https://goblin.tools/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Conjunto de ferramentas para simplificar tarefas e gerenciar o tempo.",
     "tags": {
       "lessonPhase": [
+        "Rotinas Administrativas",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Acessibilidade"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito na web"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Divida tarefas complexas em etapas menores, facilitando o aprendizado de alunos neurodivergentes.",
     "screenshotUrl": "/images/tools/goblin-tools.webp"
   },
   {
     "id": "google-gemini-for-education",
     "name": "Google Gemini for Education",
     "url": "https://edu.google.com/ai/gemini-for-education/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Assistente de inteligência artificial do Google integrado ao Workspace educacional.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Slides"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com plano Pro disponível"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie planos de aula e questionários integrados diretamente ao Google Documentos e Classroom.",
     "screenshotUrl": "/images/tools/google-gemini-for-education.webp"
   },
   {
     "id": "google-vids",
     "name": "Google Vids",
     "url": "https://workspace.google.com/products/vids",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Criação de vídeos e storyboards inteligentes integrados ao Google Workspace.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Vídeo"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito no Workspace educacional com opcionais pagos"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Gere roteiros e vídeos explicativos usando templates e narrações por inteligência artificial.",
     "screenshotUrl": "/images/tools/google-vids.webp"
   },
   {
     "id": "gotfeedback-by-gotlearning",
     "name": "gotFeedback by gotLearning",
     "url": "https://gotlearning.webflow.io/how-does-it-work",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "IA para auxiliar professores no fornecimento de feedbacks estruturados.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Avaliação"
       ],
       "outputFormat": [
         "Texto"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Suba textos ou documentos de alunos e receba sugestões detalhadas de avaliação.",
     "screenshotUrl": "/images/tools/gotfeedback-by-gotlearning.webp"
   },
   {
     "id": "groovelit",
     "name": "Groovelit",
     "url": "http://groovelit.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma gamificada para prática e engajamento na escrita de textos.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Avaliação"
       ],
       "outputFormat": [
         "Texto"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com planos escolares pagos"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Estimule a escrita diária e colaborativa por meio de desafios criativos com pontuação.",
     "screenshotUrl": "/images/tools/groovelit.webp"
   },
   {
@@ -3111,36 +3071,41 @@
     "id": "ideogram",
     "name": "Ideogram",
     "url": "http://ideogram.ai",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Gerador de imagens por IA com excelente renderização de textos.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Imagem"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com limite diário"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie cartazes, infográficos e designs visuais com palavras legíveis para ilustrar suas aulas.",
     "screenshotUrl": "/images/tools/ideogram.webp"
   },
   {
-    "id": "magic-padlet",
+    "id": "padlet",
     "name": "Magic Padlet",
-    "url": "https://padlet.blog/magic-padlet-generate-padlets-with-ai/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "url": "https://padlet.blog/introducing-padlet-ta/",
+    "jobToBeDone": "Recurso de IA para gerar layouts e conteúdos em murais digitais.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Imagem",
+        "Links",
+        "Texto",
+        "Quizzes"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito para até 3 murais"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Crie murais de brainstorming organizados automaticamente para atividades colaborativas na aula.",
     "screenshotUrl": "/images/tools/magic-padlet.webp"
   },
   {
@@ -3185,72 +3150,57 @@
     "id": "mirrortalk",
     "name": "MirrorTalk",
     "url": "https://mirrortalk.ai/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Ferramenta de IA voltada para reflexão acadêmica e feedbacks analíticos.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Avaliação"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Áudio"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito para professores com limites"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Estimule a autoavaliação dos alunos através de áudio e acompanhe os insights de aprendizado.",
     "screenshotUrl": "/images/tools/mirrortalk.webp"
-  },
-  {
-    "id": "padlet-ta",
-    "name": "Padlet TA",
-    "url": "https://padlet.blog/introducing-padlet-ta/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
-    "tags": {
-      "lessonPhase": [
-        "Execução"
-      ],
-      "outputFormat": [
-        "Texto"
-      ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
-    },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
-    "screenshotUrl": "/images/tools/padlet-ta.webp"
   },
   {
     "id": "parlay-genie",
     "name": "Parlay Genie",
     "url": "http://parlayideas.com",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Gerador de tópicos e discussões profundas para a sala de aula.",
     "tags": {
       "lessonPhase": [
+        "Ideação",
         "Execução"
       ],
       "outputFormat": [
         "Texto"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Gere perguntas de pensamento crítico para iniciar debates produtivos com os alunos.",
     "screenshotUrl": "/images/tools/parlay-genie.webp"
   },
   {
     "id": "pi",
     "name": "Pi",
     "url": "https://pi.ai/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Assistente de IA conversacional focado em diálogos interativos e suporte.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Pesquisa"
       ],
       "outputFormat": [
         "Texto"
       ],
-      "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costType": "Free",
+      "costDetail": "Gratuito"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Excelente para simular debates ou atuar como tutor individual de apoio aos alunos.",
     "screenshotUrl": "/images/tools/pi.webp"
   },
   {
@@ -3276,36 +3226,40 @@
     "id": "socrait",
     "name": "Socrait",
     "url": "https://socrait.com/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Assistente de IA por voz que registra dados da aula.",
     "tags": {
       "lessonPhase": [
-        "Execução"
+        "Execução",
+        "Rotinas Administrativas"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Dados"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito para uma turma"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Ative por voz para logar participação, dar feedbacks e resumir a aula.",
     "screenshotUrl": "/images/tools/socrait.webp"
   },
   {
     "id": "teachshare",
     "name": "TeachShare",
     "url": "https://www.teachshare.com/",
-    "jobToBeDone": "Apoiar a rotina pedagógica e a produtividade de professores e alunos.",
+    "jobToBeDone": "Plataforma colaborativa para criar e alinhar planos de aula.",
     "tags": {
       "lessonPhase": [
+        "Planejamento",
         "Execução"
       ],
       "outputFormat": [
-        "Texto"
+        "Texto",
+        "Links"
       ],
       "costType": "Freemium",
-      "costDetail": "Gratuito com limitações"
+      "costDetail": "Gratuito com limite mensal"
     },
-    "tip": "Consulte o site oficial da ferramenta para explorar todas as suas funcionalidades práticas.",
+    "tip": "Use a IA para criar e adaptar tarefas alinhadas a padrões curriculares técnicos.",
     "screenshotUrl": "/images/tools/teachshare.webp"
   },
   {
