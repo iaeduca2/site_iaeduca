@@ -12,6 +12,10 @@ dist/
 # OS/editor
 .DS_Store
 
+# Temporary scratch & preview files
+scratch/
+.agents/preview.*
+
 # Source material (large binary, not needed for build)
 EBOOK IA.pdf
 

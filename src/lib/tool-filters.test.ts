@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Tool } from "./tools";
-import { filterTools, formatCostType, getUniqueValues } from "./tool-filters";
+import { filterTools, formatCostType, getUniqueValues, smartFilterTools } from "./tool-filters";
 
 const tools: Tool[] = [
 	{
@@ -88,5 +88,18 @@ describe("tool filters", () => {
 		expect(formatCostType("Free")).toBe("Gratuita");
 		expect(formatCostType("Freemium")).toBe("Freemium");
 		expect(formatCostType("Trial")).toBe("Teste grátis");
+	});
+
+	it("smartFilterTools activates zero-results fallback strategy when exact match is empty", () => {
+		const result = smartFilterTools(tools, {
+			query: "termo-inexistente-xyz",
+			phase: "Planejamento",
+			format: "Slides",
+			costType: "Freemium",
+		});
+
+		expect(result.isFallback).toBe(true);
+		expect(result.tools.length).toBeGreaterThan(0);
+		expect(result.tools[0]?.id).toBe("gamma");
 	});
 });
